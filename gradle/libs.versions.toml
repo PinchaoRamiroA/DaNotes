@@ -2,7 +2,7 @@
 # Gradle / Kotlin
 agp = "8.12.3"
 kotlin = "2.2.20"
-ksp = "2.0.21-1.0.28"
+ksp = "2.2.20-2.0.3"
 
 # Core
 coreKtx = "1.17.0"
@@ -27,7 +27,7 @@ lifecycle = "2.9.4"
 hilt = "2.57.1"
 
 # Markdown
-markdown = "0.4.0"
+markdownRenderer = "0.37.0"
 
 [libraries]
 # Core
@@ -63,7 +63,7 @@ hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 
 # Markdown
-markdown-compose = { group = "com.github.jeziellago", name = "compose-markdown", version.ref = "markdown" }
+markdown-renderer = { group = "com.mikepenz", name = "multiplatform-markdown-renderer", version.ref = "markdownRenderer" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
