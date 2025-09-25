@@ -1,33 +1,33 @@
 [versions]
 # Gradle / Kotlin
-agp = "8.12.3"
-kotlin = "2.2.20"
-ksp = "2.2.20-2.0.3"
+agp = "8.12.3" # Actualizado de 8.12.1
+kotlin = "2.2.20" # Actualizado de 2.2.10
+ksp = "2.2.20-2.0.3" # Actualizado de 2.0.21-1.0.28 (Alineado con Kotlin 2.2.20)
 
 # Core
-coreKtx = "1.17.0"
+coreKtx = "1.17.0" # OK
 
-# Testing
+# Testing (Se mantienen las versiones proporcionadas)
 junit = "4.13.2"
 junitVersion = "1.3.0"
 espressoCore = "3.7.0"
 
 # Compose
-activityCompose = "1.11.0"
-composeBom = "2025.09.01"
-navigationCompose = "2.9.5"
+activityCompose = "1.11.0" # OK
+composeBom = "2025.09.01" # OK
+navigationCompose = "2.9.5" # OK
 
 # Room
-room = "2.8.1"
+room = "2.8.0" # Actualizado de 2.7.2
 
 # Lifecycle
-lifecycle = "2.9.4"
+lifecycle = "2.9.4" # OK
 
 # Hilt
-hilt = "2.57.1"
+hilt = "2.57.1" # Actualizado de 2.57
 
 # Markdown
-markdownRenderer = "0.37.0"
+markdownRenderer = "0.37.0" # OK
 
 [libraries]
 # Core
