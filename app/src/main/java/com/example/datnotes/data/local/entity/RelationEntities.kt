@@ -11,9 +11,9 @@ data class NoteWithTags(
         entityColumn = "id",
         associateBy = Junction(
             value = NoteTagCrossRef::class,
-            parentColumn = "idNota",
-            entityColumn = "idEtiqueta"
+            parentColumn = "noteId",
+            entityColumn = "tagId"
         )
     )
-    val etiquetas: List<TagEntity>
+    val tags: List<TagEntity>
 )
