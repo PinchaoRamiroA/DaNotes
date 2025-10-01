@@ -9,7 +9,6 @@ data class Note(
     val createdAt: Date = Date(),
     val importance: Int = 1, // 1..5
     val type: NoteType = NoteType.TEXT,
-    val tags: List<String> = emptyList(),
     val state: NoteState = NoteState.ACTIVE,
     val folderId: Int? = null
 )

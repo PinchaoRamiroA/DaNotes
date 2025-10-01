@@ -2,8 +2,6 @@ package com.example.datnotes.data.local.dao
 
 import androidx.room.*
 import com.example.datnotes.data.local.entity.*
-import com.example.datnotes.constants.NoteType
-import com.example.datnotes.constants.NoteState
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -22,6 +20,12 @@ interface NoteDao {
 
     @Delete
     suspend fun delete(note: NoteEntity)
+
+    @Query("UPDATE notes SET estado = 'ARCHIVED' WHERE id = :noteId")
+    suspend fun archiveNote(noteId: Int)
+
+    @Query("UPDATE notes SET estado = 'ACTIVE' WHERE id = :noteId")
+    suspend fun restoreNote(noteId: Int)
 
     @Transaction
     @Query("SELECT * FROM notes WHERE id = :noteId")
